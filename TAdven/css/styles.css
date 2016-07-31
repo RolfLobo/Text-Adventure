@@ -1,0 +1,100 @@
+﻿@font-face { font-family:Lase; src: url(../fonts/Lase.ttf)}   
+@font-face { font-family:truth; src: url(../fonts/truth.TTF)};  
+@charset "utf-8";
+
+
+
+
+body {
+	overflow:none;
+	
+}
+
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#000000; 
+	z-index:99;
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; 
+	top:50%;
+	background-image:url(../img/status.gif); 
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; 
+}
+.p1 { 
+background-image:url(../img/bg.jpg); 
+  height:100%;
+  width:100%;
+  overflow:none; /* or overflow:auto; if you want scrollbars */
+  align:center;
+}
+html,body{ margin:0; padding:0; height:100%; width:100%;
+ text-align: center;}
+
+.svg-wrapper {
+  position: relative;
+  top:10%;/*Change distance from Intro*/
+ transform: translateY(-50%);
+margin: 0 auto;
+ width: 320px; 
+   
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #E01919;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'truth';
+  font-size: 50px;
+  line-height: 32px;
+  letter-spacing: 5px;
+  color:#ffffff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+.title {
+font-family: 'Lase';
+text-align:center;
+ color:#FFFFFF;
+font-size:3.5em;
+letter-spacing: 5px;
+}
+
+.intro{
+font-family: 'truth';
+ color:#FFFFFF;
+ font-size:3.5em;
+  top:90%;/*Change distance from Intro*/
+}
+.test{
+  top:90%;/*Change distance from Intro*/
+}
+
+
+  
+
+
+
+
+

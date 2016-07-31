@@ -1,0 +1,70 @@
+@charset "utf-8";
+body {
+	overflow: hidden;
+}
+html,body{ margin:0; padding:0; height:100%; width:100%;
+ text-align: center;}
+
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#000000; 
+	z-index:99; 
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	background-image:url(../img/status.gif); 
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; 
+}
+#Bg{
+background-image:url(../img/bg.jpg); 
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  align:center;}
+  
+#message_start{
+color:#FFFFFF;
+ font-size:1.5em;
+}
+
+#area{
+color:#FFFFFF;
+font-size:1.5em;
+}
+
+input[type="text"]
+{
+    font-size:25px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid red;
+    outline: 0;
+}
+
+input[type="text"]:hover
+{
+    font-size:25px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+}
+
+#Command_input {
+    color: #DE2A00;
+}
+
+#Command_input:hover{
+    color: #FFFFFF;
+}

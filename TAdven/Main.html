@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	  <meta charset="utf-8"/>
+	  <title>TA</title>
+<script type="text/javascript" src="scripts/jquery.js"></script>	  
+	  <link type="text/plain" rel="author" href="http://www.gerbers.ch/humans.txt"/>
+<title>Main</title>
+	  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, print"/>
+	  
+</head>
+
+<body>
+
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+<div id="Bg">
+
+<div id="console">
+<p id="message_start"> <br><strong>Welcome to TA.</strong><br>
+                      Type in commands in the command field to start the game.<br>
+					  Type in <strong>'help'</strong> to get the list of usable commands.</p>
+
+
+<p id="area"><br><br>I am on the lawn and I see that the manor is in front of me.<br>
+              I think my brother is on the otherside of the Manor.<br>
+			  It seems like the only way to get there is through the manor.<br><br><br></p>
+
+
+<!--Output field-->
+<div id="Output"></div>
+
+<form onsubmit="return false;">
+<input type="text" size="50" autofocus="autofocus" id="Command_input"/>
+</form>
+
+<script type="text/javascript" src="scripts/javascript.js"></script>
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+
+
+<script type="text/javascript">
+	
+		$(window).load(function() { 
+			
+			$('#preloader').delay(1000).fadeOut('slow'); 
+			$('body').delay(1000).css({'overflow':'visible'});
+		})
+
+</script> 
+
+</body>
+</html>
